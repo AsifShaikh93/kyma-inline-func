@@ -8,7 +8,7 @@ module.exports = {
       console.log('Request path:', path);
 
       // Step 2: Make external API call using that path
-      const backendURL = `http://a0896a9db16b143c9966c6a847ccbc36-1181281374.eu-central-1.elb.amazonaws.com/inline${path}`;
+      const backendURL = `http://a0896a9db16b143c9966c6a847ccbc36-1181281374.eu-central-1.elb.amazonaws.com/workverse/{path}`;
       const apiRes = await fetch(backendURL);
       const responseText = await apiRes.text();
 
