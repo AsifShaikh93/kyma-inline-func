@@ -2,6 +2,7 @@ const mysql = require('mysql2/promise');
 
 module.exports = {
   main: async function (event, context) {
+    return 'hello world'
     try {
       // Step 1: Extract the path
       const path = event.extensions?.request?.path || '/default';
